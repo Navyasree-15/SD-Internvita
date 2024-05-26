@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Reference with Full-Screen Image</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .full-screen-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/1920x1080');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 3px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-screen-background"></div>
+    <header>
+        <h1>HTML Tags Reference</h1>
+        <nav>
+            <ul>
+                <li><a href="#text">Text Content</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#frames">Frames</a></li>
+                <li><a href="#semantic">Semantic Elements</a></li>
+                <li><a href="#programming">Programming</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="text">
+            <h2>Text Content</h2>
+            <p><strong>Paragraph:</strong> <code>&lt;p&gt;</code> This is a paragraph.</p>
+            <p><strong>Heading:</strong> <code>&lt;h1&gt; to &lt;h6&gt;</code></p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <p><strong>List:</strong> <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code></p>
+            <ul>
+                <li>Unordered list item</li>
+                <li>Unordered list item</li>
+            </ul>
+            <ol>
+                <li>Ordered list item</li>
+                <li>Ordered list item</li>
+            </ol>
+            <p><strong>Emphasis:</strong> <code>&lt;em&gt;</code> <em>Emphasized text</em></p>
+            <p><strong>Strong:</strong> <code>&lt;strong&gt;</code> <strong>Strong text</strong></p>
+            <p><strong>Link:</strong> <code>&lt;a&gt;</code> <a href="#">This is a link</a></p>
+            <p><strong>Inline code:</strong> <code>&lt;code&gt;</code> <code>&lt;div&gt;</code></p>
+            <p><strong>Preformatted text:</strong> <code>&lt;pre&gt;</code></p>
+            <pre>preformatted text</pre>
+        </section>
+
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <p><strong>Image:</strong> <code>&lt;img&gt;</code></p>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <p><strong>Audio:</strong> <code>&lt;audio&gt;</code></p>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p><strong>Video:</strong> <code>&lt;video&gt;</code></p>
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <form>
+                <p><strong>Input:</strong> <code>&lt;input&gt;</code></p>
+                <label for="text-input">Text Input:</label>
+                <input type="text" id="text-input" name="text-input"><br><br>
+                <label for="checkbox">Checkbox:</label>
+                <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+                <label for="radio">Radio:</label>
+                <input type="radio" id="radio" name="radio"><br><br>
+                <label for="range">Range:</label>
+                <input type="range" id="range" name="range"><br><br>
+                <label for="submit">Submit:</label>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <p><strong>Text Area:</strong> <code>&lt;textarea&gt;</code></p>
+            <textarea rows="4" cols="50"></textarea>
+            <p><strong>Select:</strong> <code>&lt;select&gt;</code></p>
+            <select>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+        </section>
+
+        <section id="tables">
+            <h2>Tables</h2>
+            <p><strong>Table:</strong> <code>&lt;table&gt;</code></p>
+            <table border="1">
+                <caption>Table Caption</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                    </tr>
+                    <tr>
+                        <td>Data 3</td>
+                        <td>Data 4</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Footer 1</td>
+                        <td>Footer 2</td>
+                    </tr>
+                </tfoot>
+            </table>
+       

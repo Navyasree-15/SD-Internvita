@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 3em;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            padding: 80px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Beautiful Photo Gallery</h1>
+    <div class="gallery">
+        <img src="https://static2.tripoto.com/media/filter/tst/img/OgData/1609564964_beautiful_ghats_of_vrindavan_1.jpg" alt="Photo 1">
+        <img src="https://allholyplaces.com/wp-content/uploads/2018/01/vaishno-devi_pti-1200-1024x529.jpg" alt="Photo 2">
+        <img src="https://cdn.britannica.com/12/94612-050-B4EEB84A/temple-Buddhist-Mahabodhi-Bihar-India-Bodh-Gaya.jpg" alt="Photo 3">
+        <img src="https://www.liveenhanced.com/wp-content/uploads/2018/01/3.Golden-Temple-Images.jpg" alt="Photo 4">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.wBBv45IgLt0PjeynvSjhzwHaFj&pid=Api&P=0&h=180" alt="Photo 5">
+        <img src="https://www.adotrip.com/public/images/areas/master_images/5fbcf26e83bc2-Kamakhya_Temple_Attractions.jpg" alt="Photo 6">
+    </div>
+</body>
+</html>
